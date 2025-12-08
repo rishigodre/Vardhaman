@@ -24,19 +24,19 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: ['Samay ke saath bhi', 'Samay ke baad bhi'],
+      details: ['Shop No.4, Opposite Krishna Medical Store, Filmcity Road, Goregaon East, Mumbai-400063, Maharashtra'],
       color: 'from-blue-500 to-blue-600'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+91 98765 43210', '+91 98765 43211'],
+      details: ['+91 99306 78593', '+91 98928 38593'],
       color: 'from-green-500 to-green-600'
     },
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['info@vardhamancarpet.com', 'sales@vardhamancarpet.com'],
+      details: ['vardhamanfurnishing@gmail.com'],
       color: 'from-purple-500 to-purple-600'
     },
     {
@@ -132,7 +132,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-burgundy-500 focus:ring-2 focus:ring-burgundy-200 transition-all duration-300 outline-none"
-                    placeholder="Rishi Godre"
+                    placeholder="Hemant Jain"
                   />
                 </div>
 
@@ -214,7 +214,7 @@ export default function ContactPage() {
                   <div className="text-center">
                     <MapPin size={48} className="text-burgundy-700 mx-auto mb-4" />
                     <p className="text-burgundy-900 font-semibold text-lg">Map View</p>
-                    <p className="text-burgundy-700 text-sm mt-2">Samay ke paar!!!</p>
+                    <p className="text-burgundy-700 text-sm mt-2">placeholder</p>
                   </div>
                 </div>
                 {/* Actual Google Maps embed later...*/}
