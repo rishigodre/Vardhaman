@@ -71,16 +71,16 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-gray-300">
                 <MapPin size={18} className="text-burgundy-400 mt-1 flex-shrink-0" />
-                <span className="text-sm">Your Location Here<br />City, State</span>
+                <span className="text-sm">Shop No.4, Filmcity Road, opp. Krishna Medical Store, Shivaji Nagar, Gokuldham Colony, Goregaon,<br />Mumbai-400 097, Maharashtra</span>
               </li>
               <li className="flex items-start gap-3 text-gray-300">
                 <Phone size={18} className="text-burgundy-400 mt-1 flex-shrink-0" />
-                <span className="text-sm">+91 98765 43210</span>
+                <span className="text-sm">+91 99306 78593</span>
               </li>
               <li className="flex items-start gap-3 text-gray-300">
                 <Mail size={18} className="text-burgundy-400 mt-1 flex-shrink-0" />
-                <a href="mailto:info@vardhamancarpeting.com" className="text-sm hover:text-gold-300 transition-colors">
-                  vardhamancarpeting.com
+                <a href="mailto:vardhamanfurnishing@gmail.com" className="text-sm hover:text-gold-300 transition-colors">
+                  vardhamanfurnishing.com
                 </a>
               </li>
             </ul>

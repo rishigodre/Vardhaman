@@ -38,7 +38,7 @@ export default function ContactPage() {
       title: 'Email Us',
       details: ['vardhamanfurnishing@gmail.com'],
       color: 'from-purple-500 to-purple-600'
-    },
+    },  
     {
       icon: Clock,
       title: 'Working Hours',
@@ -132,7 +132,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-burgundy-500 focus:ring-2 focus:ring-burgundy-200 transition-all duration-300 outline-none"
-                    placeholder="Hemant Jain"
+                    placeholder="Name"
                   />
                 </div>
 
@@ -147,7 +147,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-burgundy-500 focus:ring-2 focus:ring-burgundy-200 transition-all duration-300 outline-none"
-                    placeholder="yay@example.com"
+                    placeholder="name@gmail.com"
                   />
                 </div>
 
@@ -209,16 +209,24 @@ export default function ContactPage() {
                 Come visit us to see our full collection and experience the quality firsthand.
               </p>
 
-              <div className="relative h-80 rounded-2xl overflow-hidden shadow-xl mb-8 group">
-                <div className="absolute inset-0 bg-gradient-to-br from-burgundy-100 to-burgundy-200 flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin size={48} className="text-burgundy-700 mx-auto mb-4" />
-                    <p className="text-burgundy-900 font-semibold text-lg">Map View</p>
-                    <p className="text-burgundy-700 text-sm mt-2">placeholder</p>
+              <div
+                  className="relative h-80 rounded-2xl overflow-hidden shadow-xl mb-8 group cursor-pointer"
+                  onClick={() =>
+                    window.open("https://www.google.com/maps/search/?api=1&query=5VG9%2B6W+Mumbai+Maharashtra", "_blank")
+                  }
+                >
+                  <iframe
+                    src="https://www.google.com/maps?q=5VG9%2B6W+Mumbai+Maharashtra&output=embed"
+                    className="absolute inset-0 w-full h-full border-0 pointer-events-none"
+                    loading="lazy"
+                  ></iframe>
+
+                  <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all">
+                    <MapPin size={48} className="text-white mb-2" />
+                    <p className="text-white font-semibold text-lg">Open in Google Maps</p>
+                    <p className="text-white text-sm mt-1">Plus Code: 5VG9+6W</p>
                   </div>
                 </div>
-                {/* Actual Google Maps embed later...*/}
-              </div>
             </div>
           </div>
         </div>
