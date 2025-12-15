@@ -1,0 +1,106 @@
+'use client';
+
+import { useEffect, useState } from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import Image from 'next/image';
+
+const row1 = [
+  '/works/work1.jpg',
+  '/works/work2.jpg',
+  '/works/work3.jpg',
+  '/works/work4.jpg',
+  '/works/work5.jpg',
+];
+
+const row2 = [
+  '/works/work6.jpg',
+  '/works/work7.jpg',
+  '/works/work8.jpg',
+  '/works/work9.jpg',
+  '/works/work10.jpg',
+];
+
+const row3 = [
+  '/works/work11.jpg',
+  '/works/work12.jpg',
+  '/works/work13.jpg',
+  '/works/work14.jpg',
+  '/works/work15.jpg',
+];
+
+function AutoScrollRow({
+  images,
+  reverse = false,
+  duration = '40s',
+}: {
+  images: string[];
+  reverse?: boolean;
+  duration?: string;
+}) {
+  return (
+    <div className="relative overflow-hidden">
+      <div
+        className={`flex gap-6 w-max ${
+          reverse ? 'animate-marquee-reverse' : 'animate-marquee'
+        } hover:[animation-play-state:paused]`}
+        style={{ animationDuration: duration }}
+      >
+        {[...images, ...images].map((src, idx) => (
+          <div
+            key={idx}
+            className="relative h-64 w-96 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-500"
+          >
+            <Image
+              src={src}
+              alt="Past work"
+              fill
+              className="object-cover transition-transform duration-500 hover:scale-105"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default function PastWorkPage() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    setVisible(true);
+  }, []);
+
+  return (
+    <main className="min-h-screen bg-white">
+      <Navbar />
+
+      <section className="py-10 px-4 bg-gradient-to-br from-burgundy-50 to-cream-100">
+        <div
+          className={`max-w-5xl mx-auto text-center transition-all duration-1000 ${
+            visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+        >
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Our Past Works
+            </h1>
+
+            <p className="text-base md:text-lg text-gray-700">
+            A glimpse of craftsmanship, quality, and elegance we have delivered.
+            </p>
+
+        </div>
+      </section>
+
+      <section className="py-8 space-y-10">
+        <AutoScrollRow images={row1} duration="120s" />
+        <AutoScrollRow images={row2} reverse duration="90s" />
+        <AutoScrollRow images={row3} duration="150s" />
+      </section>
+
+      <Footer />
+    </main>
+  );
+}
+
+export const dynamic = 'force-static';
