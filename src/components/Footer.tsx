@@ -2,6 +2,15 @@ import Link from 'next/link';
 import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Sparkles } from 'lucide-react';
 
 export default function Footer() {
+
+   const navLinks = [
+    { name: 'Home', href: '/' },
+    { name: 'Past works', href: '/past-works' },
+    { name: 'Products', href: '/products' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Contact', href: '/contact' },
+  ];
+
   const currentYear = new Date().getFullYear();
 
   return (
@@ -44,24 +53,25 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-2">
-              <Sparkles size={16} className="text-gold-400" />
-              Quick Links
-            </h3>
-            <ul className="space-y-3">
-              {['Home', 'Products', 'About Us', 'Contact'].map((link) => (
-                <li key={link}>
-                  <Link 
-                    href={`/${link.toLowerCase().replace(' ', '-')}`}
-                    className="text-gray-300 hover:text-gold-300 transition-colors duration-300 flex items-center gap-2 group"
-                  >
-                    <span className="w-1.5 h-1.5 bg-burgundy-500 rounded-full group-hover:bg-gold-400 transition-colors"></span>
-                    {link}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-2">
+          <Sparkles size={16} className="text-gold-400" />
+          Quick Links
+        </h3>
+
+        <ul className="space-y-3">
+          {navLinks.map((link) => (
+            <li key={link.name}>
+              <Link
+                href={link.href}
+                className="text-gray-300 hover:text-gold-300 transition-colors duration-300 flex items-center gap-2 group"
+              >
+                <span className="w-1.5 h-1.5 bg-burgundy-500 rounded-full group-hover:bg-gold-400 transition-colors"></span>
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
 
           <div>
             <h3 className="text-lg font-bold text-white mb-6 flex items-center gap-2">
