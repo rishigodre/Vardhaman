@@ -45,7 +45,7 @@ export default function Hero() {
             size="lg"
             className="bg-white hover:bg-white/90 text-burgundy-900 px-10 py-7 text-lg font-semibold shadow-2xl hover:shadow-gold-500/20 transition-all duration-300 hover:scale-105 border-2 border-gold-400/30"
           >
-            <Link href="/products">Explore Collection</Link>
+            <Link href="/past-works">Explore our Craftmanship</Link>
           </Button>
           
           <Button 

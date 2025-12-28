@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -295,7 +296,7 @@ export default function ProductsPage() {
               Get personalized recommendations and exclusive deals!
             </p>
             <button className="bg-gradient-to-r from-burgundy-700 via-burgundy-800 to-burgundy-900 hover:from-burgundy-800 hover:via-burgundy-900 hover:to-burgundy-950 text-gray-500 px-12 py-5 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center gap-3 mx-auto shadow-xl">
-              <span>Contact Us Today</span>
+              <Link href='/contact'>Contact Us</Link>
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
