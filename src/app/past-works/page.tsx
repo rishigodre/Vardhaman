@@ -25,7 +25,7 @@
     return (
       <div className="relative overflow-hidden">
         <div
-          className={`flex gap-6 w-max ${
+          className={`flex gap-3 w-max ${
             reverse ? 'animate-marquee-reverse' : 'animate-marquee'
           } hover:[animation-play-state:paused]`}
           style={{ animationDuration: duration }}
@@ -76,10 +76,10 @@
           </div>
         </section>
 
-        <section className="py-8 space-y-10">
-          <AutoScrollRow images={row1} duration="120s" />
-          <AutoScrollRow images={row2} reverse duration="90s" />
-          <AutoScrollRow images={row3} duration="150s" />
+        <section className="py-3 space-y-3">
+          <AutoScrollRow images={row1} duration="180s" />
+          <AutoScrollRow images={row2} reverse duration="150s" />
+          <AutoScrollRow images={row3} duration="250s" />
         </section>
 
         <Footer />

@@ -155,15 +155,7 @@ function InfiniteCarousel({ products, direction = 'left' }: InfiniteCarouselProp
               <h3 className="font-bold text-gray-900 text-lg mb-2 group-hover:text-burgundy-700 transition-colors duration-300">
                 {product.name}
               </h3>
-              <div className="flex items-center justify-between">
-                <p className="text-2xl font-bold bg-gradient-to-r text-gray-500 from-burgundy-700 to-burgundy-900 bg-clip-text">
-                  {product.price}
-                </p>
-                <span className="text-sm text-gray-500 flex items-center gap-1">
-                  <Sparkles size={14} className="text-gold-500" />
-                  Premium
-                </span>
-              </div>
+            
             </div>
           </Card>
         ))}

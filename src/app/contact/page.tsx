@@ -30,7 +30,7 @@ export default function ContactPage() {
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+91 99306 78593', '+91 98928 38593'],
+      details: [ '+91 98928 38593', '+91 99306 78593',],
       color: 'from-green-500 to-green-600'
     },
     {
