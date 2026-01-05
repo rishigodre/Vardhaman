@@ -24,7 +24,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: 'Visit Us',
-      details: ['Shop No.4, Opposite Krishna Medical Store, Filmcity Road, Goregaon East, Mumbai-400063, Maharashtra'],
+      details: ['Vardhman Carpet Foam and Furnishing, shop no. 3, Mohili Village Lata Niwas, Sakinaka 400 072, Near metro gate no 2', 'Shop No.4, Opposite Krishna Medical Store, Filmcity Road, Goregaon East, Mumbai-400063, Maharashtra'],
       color: 'from-blue-500 to-blue-600'
     },
     {

@@ -1,51 +1,9 @@
 import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import OptimizedImage from './OptimizedImage';
-import { IMAGES } from '@/config/cloudinary';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { productCategories } from '@/data/products'
 
-const categories = [
-  {
-    id: 'foam',
-    name: 'Premium Foam',
-    description: 'Comfort meets durability',
-    image: IMAGES.categories.foam,
-    gradient: 'from-amber-500/90 to-orange-600/90',
-    icon: '🛋️',
-  },
-  {
-    id: 'furnishings',
-    name: 'Furnishings',
-    description: 'Transform your spaces',
-    image: IMAGES.categories.furnishings,
-    gradient: 'from-emerald-500/90 to-teal-600/90',
-    icon: '🛍️',
-  },
-  {
-    id: 'carpets',
-    name: 'Luxury Carpets',
-    description: 'Elegance woven in',
-    image: IMAGES.categories.carpets,
-    gradient: 'from-burgundy-600/90 to-rose-700/90',
-    icon: '🧶',
-  },
-  {
-    id: 'wallpapers',
-    name: 'Wallpapers',
-    description: 'Art for your walls',
-    image: IMAGES.categories.wallpapers,
-    gradient: 'from-purple-500/90 to-pink-600/90',
-    icon: '🎨',
-  },
-  {
-    id: 'mattresses',
-    name: 'Mattresses',
-    description: 'Sleep in luxury',
-    image: IMAGES.categories.mattresses,
-    gradient: 'from-blue-500/90 to-indigo-600/90',
-    icon: '🛌',
-  },
-];
 
 export default function ProductCategories() {
   return (
@@ -56,7 +14,7 @@ export default function ProductCategories() {
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center mb-5">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-burgundy-50 border border-burgundy-100 rounded-full mb-4">
             <Sparkles className="w-4 h-4 text-burgundy-600" />
             <span className="text-sm text-burgundy-700 font-medium">Our Collections</span>
@@ -69,11 +27,11 @@ export default function ProductCategories() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-          {categories.map((category, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {productCategories.map((category, index) => (
             <Link
               key={category.id}
-              href={`/products#${category.id}`}
+              href={`/products/${category.id}`}
               className="group"
               style={{
                 animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`,
@@ -95,7 +53,7 @@ export default function ProductCategories() {
                     <h3 className="font-bold text-xl mb-2 text-center">
                       {category.name}
                     </h3>
-                    <p className="text-sm text-white/90 mb-4 text-center">{category.description}</p>
+                    <p className="text-sm text-white/90 mb-4 text-center">{category.shortDescription}</p>
                     
                     <div className="flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       <span className="text-sm font-medium">View All</span>
