@@ -111,96 +111,6 @@ export default function ContactPage() {
 
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div className={`transform transition-all duration-1000 delay-200 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'}`}>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Send us a Message
-              </h2>
-              <p className="text-gray-600 mb-8">
-                {"Fill out the form below and we'll get back to you as soon as possible."}
-              </p>
-
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-burgundy-500 focus:ring-2 focus:ring-burgundy-200 transition-all duration-300 outline-none"
-                    placeholder="Name"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-burgundy-500 focus:ring-2 focus:ring-burgundy-200 transition-all duration-300 outline-none"
-                    placeholder="name@gmail.com"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-burgundy-500 focus:ring-2 focus:ring-burgundy-200 transition-all duration-300 outline-none"
-                    placeholder="+91 98765 43210"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Your Message
-                  </label>
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={5}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-burgundy-500 focus:ring-2 focus:ring-burgundy-200 transition-all duration-300 outline-none resize-none"
-                    placeholder="Tell us how we can help you..."
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-burgundy-700 to-burgundy-900 hover:from-burgundy-800 hover:to-burgundy-950 text-gray-700 rounded-lg border border-gray-300 px-8 py-4 font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {isSubmitting ? (
-                    <>
-                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                      Sending...
-                    </>
-                  ) : (
-                    <>
-                      <Send size={20} />
-                      Send Message
-                    </>
-                  )}
-                </button>
-              </form>
-            </div>
-
             <div className={`transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Visit Our Showroom
@@ -228,7 +138,6 @@ export default function ContactPage() {
                   </div>
                 </div>
             </div>
-          </div>
         </div>
       </section>
 
