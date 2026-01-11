@@ -185,7 +185,7 @@ export const IMAGES = {
       `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1766752016/WhatsApp_Image_2025-12-21_at_3.27.34_PM_1_rlkqcm.jpg`,
       `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1766752013/WhatsApp_Image_2025-12-21_at_3.27.34_PM_2_cnwo94.jpg`,
       `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1766752012/WhatsApp_Image_2025-12-21_at_3.27.35_PM_m6aczb.jpg`,
-      `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1766752007/WhatsApp_Image_2025-12-21_at_3.27.36_PM_1_w3zwqe.jpg`,
+      `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1766752007/WhuatsApp_Image_2025-12-21_at_3.27.36_PM_1_w3zwqe.jpg`,
       `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1766752006/WhatsApp_Image_2025-12-21_at_3.27.36_PM_2_opd0ym.jpg`,
       `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1766752005/WhatsApp_Image_2025-12-21_at_3.27.37_PM_xv4ois.jpg`,
       `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1766751987/WhatsApp_Image_2025-12-21_at_3.27.38_PM_2_u1ihkz.jpg`,
@@ -197,6 +197,14 @@ export const IMAGES = {
       `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1767898006/WhatsApp_Image_2026-01-03_at_2.15.07_PM_10_fg63op.jpg`,
       `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1768135954/decorative-window-films-benefits-information_wugoid.jpg`,
       `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1768135954/ChatGPT_Image_Jan_11_2026_06_10_35_PM_n2avtj.png`,
+      `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1768152261/WhatsApp_Image_2026-01-11_at_10.25.22_PM_edvsfe.jpg`,
+      `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1768152259/WhatsApp_Image_2026-01-11_at_10.25.23_PM_umy1ae.jpg`,
+      `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1768152258/WhatsApp_Image_2026-01-11_at_10.28.11_PM_1_vuspnu.jpg`,
+      `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1768152259/WhatsApp_Image_2026-01-11_at_10.28.11_PM_ndvwuh.jpg`,
+      `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1768152259/WhatsApp_Image_2026-01-11_at_10.25.22_PM_1_fecdqe.jpg`,
+      `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1768152259/WhatsApp_Image_2026-01-11_at_10.25.22_PM_2_yzr8ao.jpg`,
+      `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1768152258/WhatsApp_Image_2026-01-11_at_10.28.11_PM_2_fsrzdh.jpg`,
+
     ],
   },
 
