@@ -194,7 +194,9 @@ export const IMAGES = {
       `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1766751986/WhatsApp_Image_2025-12-21_at_3.27.39_PM_2_fqqt4t.jpg`
     ],
     glassfilm: [
-      `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1767898006/WhatsApp_Image_2026-01-03_at_2.15.07_PM_10_fg63op.jpg`
+      `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1767898006/WhatsApp_Image_2026-01-03_at_2.15.07_PM_10_fg63op.jpg`,
+      `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1768135954/decorative-window-films-benefits-information_wugoid.jpg`,
+      `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.product}/v1768135954/ChatGPT_Image_Jan_11_2026_06_10_35_PM_n2avtj.png`,
     ],
   },
 
