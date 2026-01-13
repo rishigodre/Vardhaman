@@ -77,7 +77,6 @@ export const productCategories: ProductCategory[] = [
     gradient: 'from-teal-600/90 to-cyan-600/90',
     icon: '🪟',
   },
-
   {
     id: 'headboards',
     name: 'Headboards',
@@ -87,7 +86,18 @@ export const productCategories: ProductCategory[] = [
     image: IMAGES.categories.headboards,
     gradient: 'from-burgundy-600/90 to-rose-700/90',
     icon: '🛏️',
-  }
+  },
+  {
+  id: 'sofas',
+  name: 'Sofas',
+  shortDescription: 'Comfort redefined',
+  description: 'Premium sofas designed for lasting comfort, style, and effortless living.',
+  bgColor: 'bg-amber-50',
+  image: IMAGES.categories.sofas,
+  gradient: 'from-amber-600/90 to-orange-600/90',
+  icon: '🛋️',
+},
+
 
 ];
 

@@ -20,6 +20,7 @@ export const IMAGES = {
     mattresses: `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.category}/v1767896675/mattress_ufa4lq.jpg`,
     blinds: `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.category}/v1767896675/blinds_kj9f6k.jpg`,
     glassfilm: `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.category}/v1767896676/glassfilm_wit59z.jpg`,
+    sofas: `${CLOUDINARY_BASE_URL}/${IMAGE_PRESETS.category}/v1768276574/sofas_w46abh.avif`,
   },
 
   products: {

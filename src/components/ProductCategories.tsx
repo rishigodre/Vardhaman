@@ -27,7 +27,7 @@ export default function ProductCategories() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
           {productCategories.map((category, index) => (
             <Link
               key={category.id}
@@ -37,7 +37,7 @@ export default function ProductCategories() {
                 animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`,
               }}
             >
-              <Card className="relative overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white h-full">
+              <Card className="relative w-[380px] overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white h-full">
                 <div className="relative h-64 overflow-hidden">
                   <OptimizedImage
                     src={category.image}
@@ -45,16 +45,16 @@ export default function ProductCategories() {
                     aspectRatio="3/4"
                     className="w-full h-full transform group-hover:scale-110 transition-transform duration-700"
                   />
-                  
+
                   <div className={`absolute inset-0 bg-gradient-to-t ${category.gradient} opacity-60 group-hover:opacity-80 transition-opacity duration-500`}></div>
-                  
+
                   <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                     <span className="text-5xl mb-3 transform group-hover:scale-110 transition-transform duration-500">{category.icon}</span>
                     <h3 className="font-bold text-xl mb-2 text-center">
                       {category.name}
                     </h3>
                     <p className="text-sm text-white/90 mb-4 text-center">{category.shortDescription}</p>
-                    
+
                     <div className="flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                       <span className="text-sm font-medium">View All</span>
                       <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
